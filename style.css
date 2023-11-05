@@ -31,3 +31,8 @@
   grid-area: foot;
   background-color: #ffffff;
 }
+
+/* updating font family */
+body {
+  font-family: Verdana, Arial, Sans-Serif;
+}
