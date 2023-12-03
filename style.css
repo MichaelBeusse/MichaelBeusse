@@ -20,11 +20,13 @@
 #page > nav {
   grid-area: nav;
   background-color: #f5f6f7;
+  padding: 10px;
 }
 
 #page > main {
   grid-area: main;
-  background-color: #ffffff;
+  background-color: lightgray;
+  padding: 10px;
 }
 
 #page > footer {
@@ -36,3 +38,28 @@
 body {
   font-family: Verdana, Arial, Sans-Serif;
 }
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  width: 80px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #3366ff;
+  color: white;
+}
+
+.browser > h1, h2, p {
+  background-color: white;
+  margin: 10px;
+  font size: 90%;
+  padding: 10px;
+} 
+
+  
