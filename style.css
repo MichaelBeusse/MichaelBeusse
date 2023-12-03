@@ -15,6 +15,7 @@
 #page > header {
   grid-area: head;
   background-color: #3c424d;
+  text-align: center
 }
 
 #page > nav {
@@ -62,4 +63,6 @@ a:hover, a:active {
   padding: 10px;
 } 
 
-  
+h1 {
+  color: white
+}
