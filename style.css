@@ -61,7 +61,7 @@ a:hover, a:active {
   text-align: center
 }
     
-.browser > h1, h2, p {
+.browser > h1, h2, p, img {
   background-color: white;
   margin: 10px;
   font size: 90%;
