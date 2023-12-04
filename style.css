@@ -57,6 +57,10 @@ a:hover, a:active {
   color: white;
 }
 
+.title-container {
+  text-align: center
+}
+    
 .browser > h1, h2, p {
   background-color: white;
   margin: 10px;
