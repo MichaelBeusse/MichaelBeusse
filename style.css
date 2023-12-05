@@ -74,14 +74,14 @@ body {
   font-family: Verdana, Arial, Sans-Serif;
 }
 
-.button {
+/* .button {
   background-color: #3366ff;
   border: 2px solid black;
   padding: 5px 10px;
   text-align: center;
   width: 80%;
 
-}
+} */
 a:link, a:visited {
   background-color: white;
   color: black;
