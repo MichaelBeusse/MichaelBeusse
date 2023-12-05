@@ -21,19 +21,48 @@
 
 #page > nav {
   grid-area: nav;
+  float: left;
+  width: 25%;
   background-color: #f5f6f7;
   padding: 20px;
 }
 
 #page > main {
   grid-area: main;
+  float: right;
+  width: 75;
   background-color: lightgray;
   padding: 10px;
 }
 
 #page > footer {
   grid-area: foot;
+  padding: 20;
+  text-align: center;
   background-color: #f5f6f7;
+  margin-top: 20;
+}
+
+/* Add a card effect for aricles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* updating font family */
@@ -70,4 +99,8 @@ a:hover, a:active {
 
 h1 {
   color: white
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
