@@ -74,6 +74,14 @@ body {
   font-family: Verdana, Arial, Sans-Serif;
 }
 
+.button {
+  background-color: #3366ff;
+  border: 2px solid black;
+  padding: 5px 10px;
+  text-align: center;
+  width: 80%;
+
+}
 a:link, a:visited {
   background-color: white;
   color: black;
@@ -88,10 +96,6 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: #3366ff;
   color: white;
-}
-
-.title-container {
-  text-align: center
 }
 
 h1 {
