@@ -5,20 +5,20 @@
 
 /* Add a gray background color with some padding */
 body {
-  font-family: Arial;
+  font-family: Verdana, Arial, Sans-Serif;
   padding: 20px;
   background: #f1f1f1;
 }
 
 /* Header/Blog Title */
-.header {
+header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
   background: white;
 }
 
-/* Create two unequal columns that floats next to each other */
+/* Create two unequal columns that float next to each other */
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -32,15 +32,8 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for aricles */
-.card {
+/* Add a card effect for articles */
+.article-card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
@@ -54,7 +47,7 @@ body {
 }
 
 /* Footer */
-.footer {
+footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
@@ -69,20 +62,7 @@ body {
   }
 }
 
-/* updating font family */
-body {
-  font-family: Verdana, Arial, Sans-Serif;
-}
-
-/* .button {
-  background-color: #3366ff;
-  border: 2px solid black;
-  padding: 5px 10px;
-  text-align: center;
-  width: 80%;
-
-} */
-
+/* Styling for links/buttons */
 a:link, a:visited {
   background-color: white;
   color: black;
@@ -99,8 +79,9 @@ a:hover, a:active {
   color: white;
 }
 
+/* Additional styling for heading elements */
 h1 {
-  color: white
+  color: white;
 }
 
 h2, h3, h4, h5, h6 {
