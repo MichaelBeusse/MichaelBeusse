@@ -22,18 +22,18 @@ header {
 nav {
   background-color: #f1f1f1;
   padding: 15px;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column; /* Stack items vertically */
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 nav li {
-  margin-bottom: 10px; /* Add spacing between the links */
+  margin-bottom: 10px; /* Add spacing between links */
 }
 
 nav a {
@@ -47,6 +47,7 @@ nav a:hover {
   background-color: #3366ff;
   color: white;
 }
+
 
 
 /* Create flex layout for the main content and sidebar */
