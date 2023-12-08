@@ -10,41 +10,12 @@ body {
   background: #f1f1f1;
 }
 
-/* Style for header */
+/* Style for the header */
 header {
-  padding: 15px;
-  font-size: 30px;
+  padding: 15px; /* Adjust the padding to your preference */
+  font-size: 30px; /* Adjust the font size to your preference */
   text-align: center;
   background: white;
-}
-
-/* Style for the navigation bar */
-nav {
-  background-color: #f1f1f1;
-  padding: 15px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-nav a:hover {
-  background-color: #3366ff;
-  color: white;
 }
 
 /* Create flex layout for the main content and sidebar */
@@ -54,7 +25,7 @@ nav a:hover {
 
 /* Left column (nav bar) */
 .leftcolumn {
-  width: 10%;
+  width: 25%;
   padding-right: 20px; /* Add spacing between nav bar and main content */
 }
 
@@ -69,6 +40,18 @@ nav a:hover {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+}
+
+/* Style for the post content */
+.article-card .post-content {
+  display: flex;
+  flex-direction: column; /* Stack the image and content vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.article-card img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  margin-bottom: 10px; /* Add spacing between the image and content */
 }
 
 /* Clear floats after the columns */
@@ -106,22 +89,11 @@ a:hover, a:active {
 /* Additional styling for heading elements */
 h1 {
   color: white;
+  font-weight: bold;
 }
 
 h2, h3, h4, h5, h6 {
   font-weight: bold;
-}
-
-/* Style for cards with images */
-.image-card {
-  display: flex;
-  flex-direction: row-reverse; /* Reverse the order of image and text */
-  align-items: center; /* Center vertically */
-}
-
-.image-card img {
-  flex: 1; /* Take remaining space */
-  margin: 0 20px 0 0; /* Add spacing between image and text */
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other */
