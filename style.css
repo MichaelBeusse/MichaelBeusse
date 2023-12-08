@@ -1,16 +1,16 @@
-/* page layout */
+/* Reset box model for all elements */
 * {
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
+/* Set default font family and background color */
 body {
   font-family: Verdana, Arial, Sans-Serif;
   padding: 20px;
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
+/* Style for header */
 header {
   padding: 30px;
   font-size: 40px;
@@ -18,21 +18,53 @@ header {
   background: white;
 }
 
-/* Create two unequal columns that float next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
+/* Style for the navigation bar */
+nav {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+nav a:hover {
+  background-color: #3366ff;
+  color: white;
+}
+
+/* Create flex layout for the main content and sidebar */
+.row {
+  display: flex;
+}
+
+/* Left column (nav bar) */
+.leftcolumn {
   width: 25%;
+  padding-right: 20px; /* Add spacing between nav bar and main content */
 }
 
-/* Right column */
+/* Right column (main content) */
 .rightcolumn {
-  float: right;
-  width: 75%;
-  padding-left: 20px;
+  flex: 1; /* Take remaining space */
+  padding-left: 20px; /* Add spacing for content */
 }
 
-/* Add a card effect for articles */
+/* Style for blog posts */
 .article-card {
   background-color: white;
   padding: 20px;
@@ -46,20 +78,12 @@ header {
   clear: both;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
   margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
 }
 
 /* Styling for links/buttons */
@@ -88,7 +112,7 @@ h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* Add this CSS for cards with images */
+/* Style for cards with images */
 .image-card {
   display: flex;
   flex-direction: row-reverse; /* Reverse the order of image and text */
@@ -98,4 +122,16 @@ h2, h3, h4, h5, h6 {
 .image-card img {
   flex: 1; /* Take remaining space */
   margin: 0 20px 0 0; /* Add spacing between image and text */
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }

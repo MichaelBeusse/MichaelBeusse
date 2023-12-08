@@ -12,38 +12,46 @@
   <p>My journey documenting my website build from scratch</p>
 </header>
 
-<section class="main-content">
-  <article class="blog-post">
-    <h2>Updating to a Blog Layout</h2>
-    <time datetime="2023-12-03">December 3rd, 2023</time>
-    <p>Today I switched over to a two-column simple blog layout instead of a grid layout. I decided to try two floating columns first while I learn more CSS formatting to make it easier. I also spent some time trying to reconfigure the links and turn them into buttons that look nicer. Next, I'd like to learn about flex and spend some time trying to utilize flex boxes to organize content.</p>
-  </article>
+<nav>
+  <ul>
+    <li><a href="/html/">Blog</a></li>
+    <li><a href="/html/">About Me</a></li>
+    <li><a href="/html/">Contact</a></li>
+  </ul>
+</nav>
 
-  <article class="blog-post">
-    <h2>A Quick Update</h2>
-    <time datetime="2023-12-03">December 3rd, 2023</time>
-    <div class="post-content">
-      <img src="computer-small.jpg" alt="computer screen" />
-      <p>Today I just spent a little bit of time configuring some CSS styling on the nav buttons and made them change color on hover. I also adjusted some of the CSS so it would look better in different browser sizes, using relative width values instead of absolute values.</p>
-    </div>
-  </article>  
+<div class="row">
+  <div class="leftcolumn">
+    <article class="article-card">
+      <h2>Updating to a Blog Layout</h2>
+      <time datetime="2023-12-03">December 3rd, 2023</time>
+      <p>Today I switched over to a two-column simple blog layout instead of a grid layout. I decided to try two floating columns first while I learn more CSS formatting to make it easier. I also spent some time trying to reconfigure the links and turn them into buttons that look nicer. Next, I'd like to learn about flex and spend some time trying to utilize flex boxes to organize content.</p>
+    </article>
 
-  <article class="blog-post">
-    <h2>The Beginning</h2>
-    <time datetime="2023-11-04">November 4th, 2023</time>
-    <p>This marks the beginning of my journey learning how to build a website from scratch. I've been wanting to create a website for years now but often got too caught up in what theme to use or how to format things or where to host it, so I figured I'd stop worrying about all of that and just start. As I go, I'll try to document new things I learn and take periodic screenshots of my webpage so I can look back at where I started and see my progress. Eventually, I hope to have a fully functional website that looks great and is something I can be really proud of!</p>
-  </article>
-</section>
+    <article class="article-card image-card">
+      <h2>A Quick Update</h2>
+      <time datetime="2023-12-03">December 3rd, 2023</time>
+      <div class="post-content">
+        <img src="computer-small.jpg" alt="computer screen" />
+        <p>Today I just spent a little bit of time configuring some CSS styling on the nav buttons and made them change color on hover. I also adjusted some of the CSS so it would look better in different browser sizes, using relative width values instead of absolute values.</p>
+      </div>
+    </article>
 
-<aside class="sidebar">
-  <nav>
-    <ul>
-      <li><a href="/html/">Blog</a></li>
-      <li><a href="/html/">About Me</a></li>
-      <li><a href="/html/">Contact</a></li>
-    </ul>
-  </nav>
-</aside>
+    <article class="article-card">
+      <h2>The Beginning</h2>
+      <time datetime="2023-11-04">November 4th, 2023</time>
+      <p>This marks the beginning of my journey learning how to build a website from scratch. I've been wanting to create a website for years now but often got too caught up in what theme to use or how to format things or where to host it, so I figured I'd stop worrying about all of that and just start. As I go, I'll try to document new things I learn and take periodic screenshots of my webpage so I can look back at where I started and see my progress. Eventually, I hope to have a fully functional website that looks great and is something I can be really proud of!</p>
+    </article>
+  </div>
+
+  <div class="rightcolumn">
+    <!-- Your content go here -->
+  </div>
+</div>
+
+
+</div>
+
 
 <footer>
   <h2>Footer</h2>
