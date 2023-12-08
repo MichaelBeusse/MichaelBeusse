@@ -18,6 +18,37 @@ header {
   background: white;
 }
 
+/* Style for the navigation bar */
+nav {
+  background-color: #f1f1f1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px; /* Add spacing between the links */
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+nav a:hover {
+  background-color: #3366ff;
+  color: white;
+}
+
+
 /* Create flex layout for the main content and sidebar */
 .row {
   display: flex;
