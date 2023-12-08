@@ -87,3 +87,15 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+
+/* Add this CSS for cards with images */
+.image-card {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of image and text */
+  align-items: center; /* Center vertically */
+}
+
+.image-card img {
+  flex: 1; /* Take remaining space */
+  margin: 0 20px 0 0; /* Add spacing between image and text */
+}
