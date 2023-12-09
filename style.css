@@ -104,7 +104,7 @@ footer {
 /* Styling for links/buttons */
 a:link, a:visited {
   background-color: #1A1A2E;
-  color: #0F3460;
+  color: white;
   width: 100%;
   padding: 10px 20px;
   text-align: center;
