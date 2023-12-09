@@ -113,8 +113,8 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #16213E;
-  color: #E94560;
+  background-color: #E94560;
+  color: darkgray;
 }
 
 /* Additional styling for heading elements */
@@ -128,7 +128,7 @@ h2, h3, h4, h5, h6 {
   color: #999999;
 }
 
-p {
+p,time {
   color:white;
 }
 
