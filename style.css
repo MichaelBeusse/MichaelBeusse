@@ -4,6 +4,7 @@
 }
 container-header {
   box-sizing: content-box;
+  align-items: center;
   display: flex;
   float: none;
   line-height: 20px;
