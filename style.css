@@ -95,15 +95,22 @@ nav a:hover {
   margin-top: 20px;
 }
 
+.article-card img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  margin-bottom: 10px; /* Add spacing between the image and content */
+}
+
+/* Style for the post content */
+.article-card .post-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
 
 /* Create flex layout for the main content and sidebar */
 .row {
   display: flex;
-}
-
-.article-card img {
-  max-width: 100%; /* Make sure the image doesn't exceed its container */
-  margin-bottom: 10px; /* Add spacing between the image and content */
 }
 
 /* Clear floats after the columns */
