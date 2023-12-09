@@ -128,6 +128,10 @@ h2, h3, h4, h5, h6 {
   color: #999999;
 }
 
+p {
+  color:white;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other */
 @media screen and (max-width: 800px) {
   .row {
