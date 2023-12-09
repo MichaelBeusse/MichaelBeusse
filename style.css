@@ -91,6 +91,8 @@ nav a:hover {
 
 /* Style for blog posts */
 .article-card {
+  flex: 1;
+  max-width: 50%; /* Set the maximum width for blog posts */
   background-color: #1A1A2E;
   padding: 20px;
   margin-top: 20px;
