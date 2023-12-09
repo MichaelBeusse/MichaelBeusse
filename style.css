@@ -109,8 +109,6 @@ nav a:hover {
   display: flex;
   flex-grow: 1;
   flex-direction: column; /* Stack the image and content vertically */
-  align-items: center; /* Center items horizontally */
-
 }
 
 .article-card img {
