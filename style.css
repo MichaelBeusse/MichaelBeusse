@@ -29,8 +29,9 @@
 }
 
 .sidebox {
-  flex: 0 0 500px;
+  flex: 1; /* Allow sideboxes and blog content to take up equal available space */
   background-color: #1A1A2E;
+  margin: 0 2%; /* Add margin between sideboxes, blog content, and the edges */
 }
 
 .sidebox + .sidebox {
@@ -75,12 +76,13 @@ nav a:hover {
 
 .container-blog {
   display: flex;
+  flex-direction: column; /* Stack items vertically on larger screens */
+  align-items: center; /* Center items horizontally */
 }
 
 .blog-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* Take remaining space */
+  flex-basis: 50%; /* Set the initial size of blog content to 50% */
+  align-self: center; /* Center blog content within the container */
 }
 
 /* Style for blog posts */
@@ -95,35 +97,6 @@ nav a:hover {
 .row {
   display: flex;
 }
-
-/* Left column (nav bar) */
-.leftcolumn {
-  width: 10%;
-  padding-right: 20px; /* Add spacing between nav bar and main content */
-}
-
-/* Right column (main content) */
-.rightcolumn {
-  flex: 1; /* Take remaining space */
-  padding-left: 20px; /* Add spacing for content */
-}
-
-/* Style for blog posts - removing to test */ 
-/* .article-card {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  background-color: #1A1A2E;
-  padding: 20px;
-  margin-top: 20px;
-} */
-
-/* Style for the post content
-.article-card .post-content {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column; /* Stack the image and content vertically 
-}  */
 
 .article-card img {
   max-width: 100%; /* Make sure the image doesn't exceed its container */
@@ -177,14 +150,10 @@ p,time {
   padding-bottom: 10px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the columns stack on top of each other */
+/* Responsive layout - adjust layout on smaller screens */
 @media screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+  .sidebox, .blog-content {
+    flex: 1 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove margin on smaller screens */
   }
 }
