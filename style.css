@@ -85,6 +85,9 @@ nav a:hover {
 
 /* Style for blog posts */
 .article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #1A1A2E;
   padding: 20px;
   margin-top: 20px;
