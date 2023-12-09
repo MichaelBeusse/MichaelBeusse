@@ -16,8 +16,8 @@
 }
 
 .item {
+  flex: 1;
   height: 100px;
-  width: 500px; /* A fixed width as the default */
 }
 
 .item-center { 
@@ -51,7 +51,7 @@ body {
 header {
   display:flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
   font-size: 20px;
   text-align: center;
   background: #1A1A2E;
@@ -61,7 +61,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  width: 100%;
+  max-width: 60%;
   background-color: #1A1A2E;
 }
 
@@ -85,7 +85,7 @@ nav a:hover {
 .blog-content {
   flex-basis: 50%; /* Set the initial size of blog content to roughly 50% */
   align-self: center; /* Center blog content within the container */
-  max-width: 50%; /* Set the maximum width for blog content to 30% of the screen */
+  max-width: 50%; /* Set the maximum width for blog content to 50% of the screen */
 }
 
 /* Style for blog posts */
