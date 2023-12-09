@@ -83,7 +83,7 @@ nav a:hover {
 .blog-content {
   flex-basis: 50%; /* Set the initial size of blog content to roughly 50% */
   align-self: center; /* Center blog content within the container */
-  max-width: 30%; /* Set the maximum width for blog content to 30% of the screen */
+  max-width: 50%; /* Set the maximum width for blog content to 30% of the screen */
 }
 
 /* Style for blog posts */
