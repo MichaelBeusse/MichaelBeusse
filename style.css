@@ -6,7 +6,6 @@
   box-sizing: content-box;
   align-items: center;
   text-align: center;
-  display: flex;
   float: none;
   line-height: 20px;
 }
