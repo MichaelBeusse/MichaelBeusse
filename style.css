@@ -17,7 +17,7 @@
 
 .item {
   height: 100px;
-  width: 100px; /* A fixed width as the default */
+  width: 500px; /* A fixed width as the default */
 }
 
 .item-center { 
