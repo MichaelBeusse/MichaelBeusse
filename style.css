@@ -14,8 +14,7 @@ body {
 header {
   display:flex;
   flex-direction: column;
-  padding: 15px; /* Adjust the padding to your preference */
-  font-size: 30px; /* Adjust the font size to your preference */
+  font-size: 20px;
   text-align: center;
   background: white;
 }
