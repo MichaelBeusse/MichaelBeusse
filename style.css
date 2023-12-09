@@ -16,7 +16,7 @@ container-header {
 body {
   font-family: Verdana, Arial, Sans-Serif;
   padding: 20px;
-  background: #f1f1f1;
+  background: #1A1A2E;
 }
 
 /* Style for the header */
@@ -26,7 +26,7 @@ header {
   padding: 40px;
   font-size: 20px;
   text-align: center;
-  background: white;
+  background: #1A1A2E;
 }
 
 /* Style for the navigation bar */
@@ -34,7 +34,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #1A1A2E;
 }
 
 nav a {
@@ -44,8 +44,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #3366ff;
-  color: white;
+  background-color: #16213E;
+  color: #0F3460;
 }
 
 
@@ -69,7 +69,7 @@ nav a:hover {
 
 /* Style for blog posts */
 .article-card {
-  background-color: white;
+  background-color: #1A1A2E;
   padding: 20px;
   margin-top: 20px;
 }
@@ -97,14 +97,14 @@ nav a:hover {
 footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #1A1A2E;
   margin-top: 20px;
 }
 
 /* Styling for links/buttons */
 a:link, a:visited {
-  background-color: white;
-  color: black;
+  background-color: #1A1A2E;
+  color: #0F3460;
   width: 100%;
   padding: 10px 20px;
   text-align: center;
@@ -113,13 +113,13 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #3366ff;
-  color: white;
+  background-color: #16213E;
+  color: #E94560;
 }
 
 /* Additional styling for heading elements */
 h1 {
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
