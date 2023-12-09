@@ -40,12 +40,14 @@ header {
   background: #1A1A2E;
 }
 
-/* Style for the navigation bar */
-nav {
+.container-nav {
   display: flex;
   justify-content: center;
-  width: 100%;
-  background-color: #1A1A2E;
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* Adjust this value to control the space between links */
 }
 
 nav a {
@@ -57,6 +59,12 @@ nav a {
 nav a:hover {
   background-color: #16213E;
   color: #0F3460;
+}
+
+.sidebox {
+  flex: 1; /* Allow sideboxes and blog content to take up equal available space */
+  background-color: #1A1A2E;
+  margin: 0 2%; /* Add margin between sideboxes, blog content, and the edges */
 }
 
 .container-blog {
