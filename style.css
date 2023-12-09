@@ -153,9 +153,13 @@ h1 {
   font-weight: bold;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, {
   font-weight:800;
-  color: #999999;
+  color: #E94560;
+}
+
+time {
+  color: gray;
 }
 
 p, time {
