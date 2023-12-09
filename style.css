@@ -2,6 +2,14 @@
 * {
   box-sizing: border-box;
 }
+container-header {
+  box-sizing: content-box;
+  display: flex;
+  float: none;
+  line-height: 20px;
+  position: static;
+}
+
 
 /* Set default font family and background color */
 body {
@@ -14,6 +22,7 @@ body {
 header {
   display:flex;
   flex-direction: column;
+  padding: 40px;
   font-size: 20px;
   text-align: center;
   background: white;
