@@ -2,39 +2,22 @@
 * {
   box-sizing: border-box;
 }
+
 .container-header {
   box-sizing: content-box;
   align-items: center;
   text-align: center;
-  float: none;
   line-height: 20px;
   padding-bottom: 10px;
 }
 
-.container-nav {
-  display: flex;
-}
-
-.item {
-  width: 50%;
-  height: 100px;
-}
-
-.item-center { 
-  flex-grow: 1; /* Set the middle element to grow and stretch */
-}
-
-.item + .item { 
-  margin-left: 2%; 
-}
-
-.sidebox {
-  flex: 1; /* Allow sideboxes and blog content to take up equal available space */
+.header-sidebox {
+  flex: 1;
   background-color: #1A1A2E;
-  margin: 0 2%; /* Add margin between sideboxes, blog content, and the edges */
+  margin: 0 2%;
 }
 
-.sidebox + .sidebox {
+.header-sidebox + .header-sidebox {
   margin-left: 2%;
 }
 
@@ -49,7 +32,7 @@ body {
 
 /* Style for the header */
 header {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 20px;
   font-size: 20px;
@@ -86,6 +69,16 @@ nav a:hover {
   flex-basis: 50%; /* Set the initial size of blog content to roughly 50% */
   align-self: center; /* Center blog content within the container */
   max-width: 50%; /* Set the maximum width for blog content to 30% of the screen */
+}
+
+.sidebox {
+  flex: 1; /* Allow sideboxes and blog content to take up equal available space */
+  background-color: #1A1A2E;
+  margin: 0 2%; /* Add margin between sideboxes, blog content, and the edges */
+}
+
+.sidebox + .sidebox {
+  margin-left: 2%;
 }
 
 /* Style for blog posts */
@@ -155,15 +148,20 @@ h2, h3, h4, h5, h6 {
   color: #999999;
 }
 
-p,time {
+p, time {
   color:white;
   padding-bottom: 10px;
 }
 
 /* Responsive layout - adjust layout on smaller screens */
 @media screen and (max-width: 800px) {
-  .sidebox, .blog-content {
+  .sidebox, .blog-content, .header-sidebox {
     flex: 1 100%; /* Full width on smaller screens */
     margin: 0; /* Remove margin on smaller screens */
+    max-width: none; /* Remove the maximum width on smaller screens */
+  }
+
+  .sidebox + .sidebox, .header-sidebox + .header-sidebox {
+    margin-left: 0; /* Remove margin between sideboxes on smaller screens */
   }
 }
