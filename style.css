@@ -8,6 +8,7 @@
   text-align: center;
   float: none;
   line-height: 20px;
+  padding-bottom: 10px;
 }
 
 .container-nav {
@@ -27,6 +28,10 @@
   margin-left: 2%; 
 }
 
+.sidebox {
+  height: 100%;
+  width: 500px;
+}
 
 /* Set default font family and background color */
 body {
@@ -64,7 +69,7 @@ nav a:hover {
   color: #0F3460;
 }
 
-.blog-content {
+.container-blog {
   display: flex;
 }
 
