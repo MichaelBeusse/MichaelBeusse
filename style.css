@@ -2,13 +2,30 @@
 * {
   box-sizing: border-box;
 }
-container-header {
+.container-header {
   box-sizing: content-box;
   align-items: center;
   display: flex;
   float: none;
   line-height: 20px;
   position: static;
+}
+
+.container-nav {
+  display: flex;
+}
+
+.item {
+  height: 100px;
+  width: 100px; /* A fixed width as the default */
+}
+
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+.item + .item { 
+  margin-left: 2%; 
 }
 
 
