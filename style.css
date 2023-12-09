@@ -22,7 +22,7 @@ header {
 /* Style for the navigation bar */
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   background-color: #f1f1f1;
   padding: 15px;
