@@ -12,6 +12,8 @@ body {
 
 /* Style for the header */
 header {
+  display:flex;
+  flex-direction: column;
   padding: 15px; /* Adjust the padding to your preference */
   font-size: 30px; /* Adjust the font size to your preference */
   text-align: center;
@@ -20,27 +22,17 @@ header {
 
 /* Style for the navigation bar */
 nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   background-color: #f1f1f1;
   padding: 15px;
-}
-
-nav ul {
-  list-style-type: none; /* Remove bullets */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-}
-
-nav li {
-  margin-bottom: 10px; /* Add spacing between links */
 }
 
 nav a {
   text-decoration: none;
   color: black;
   padding: 10px;
-  border: 1px solid black;
 }
 
 nav a:hover {
@@ -119,7 +111,7 @@ a:hover, a:active {
 
 /* Additional styling for heading elements */
 h1 {
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
