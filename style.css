@@ -43,7 +43,8 @@ body {
   font-family: Verdana, Arial, Sans-Serif;
   padding: 20px;
   background: #1A1A2E;
-  font-size: 100%;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 /* Style for the header */
