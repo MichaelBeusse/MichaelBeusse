@@ -153,18 +153,15 @@ h1 {
   font-weight: bold;
 }
 
-
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color: #E94560;
-  font-weight: 700;
 }
 
 time {
   color: gray;
-  padding-bottom: 10px;
 }
 
-p {
+p, time {
   color:white;
   padding-bottom: 10px;
 }
