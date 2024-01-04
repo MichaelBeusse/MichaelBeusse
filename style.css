@@ -23,6 +23,12 @@
 
 /* Set default font family and background color */
 body {
+  flex: 1 0 auto;
+  width: 640px;
+  margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   font-family: Verdana, Arial, Sans-Serif;
   padding: 20px;
   background: #1A1A2E;
