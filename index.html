@@ -1,82 +1,164 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Michael's Blog From Scratch</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+  body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.65em;
+  color: #050512cc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  color: #130536cf;
+  }
+
+  h1.title {
+    font-weight: 700;
+    padding: 18px 0 18px 0;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 1em;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.65em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .main-container {
+  flex: 1 0 auto;
+  width: 640px;
+  margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+
+.logo {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  background: #4747bf;
+  color: white;
+  font-family: menlo;
+  padding: 4px;
+  padding-left: 4px;
+  padding-left: 8px;
+  letter-spacing: 4px;
+  line-height: 1.5em;
+}
+
+.logo img {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar {
+ flex: 0 0 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+a.nav-item {
+  padding-left: 30px;
+  float: right;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: .25s ease;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	
+	li {
+		margin-left: .75em;
+		margin-right: .75em;
+	}
+	
+	&:hover {
+		a {
+			color: #CCC;
+			&:hover {
+				color: #000;
+				box-shadow: 0 2px 0 0 currentcolor;
+			}
+		}
+	}
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+</style>
+
+<!------------------------>
+<!--END OF STYLE SECTION-->
+<!------------------------>
+
+
 </head>
 <body>
-
-<!-- Header Section -->
-<header>
-  <div class="container-header">
-    <h1>
-      MICHAEL BEUSSE
-    </h1>
-    <br>
-    <h2>
-      Learning How to Build a Website From Scratch
-    </h2>
-  </div>
-
-  <div class="container-nav">
-    <nav>
-      <a href="/html/">Home</a>
-      <a href="/html/">About</a>
-      <a href="/html/">Contact</a>
+  <div class="main-container">
+    <nav class="navbar-container" style="margin-bottom: 20px;">
+        <div class="navbar" style="display: flex; align-items: center;">
+          <div  style="flex-grow: 1;">
+            <a href="/" style="text-decoration: none; color: inherit">
+              <span class="logo">MB</span>
+            </a>
+          </div>
+          <a class="nav-item" href="#">Blog</a>
+          <a class="nav-item" href="#">About</a>
+          <a class="nav-item" href="#">Resume</a>
+          <a class="nav-item" href="#">Contact</a>
+        </div>
     </nav>
-  </div>
-</header>
-
-<!-- Main Content Section -->
-<div class="container-blog">
-
-  <div class="sidebox"></div>
-
-  <!-- First Blog Post -->
-  <article class="article-card">
-    <h3>Flexbox CSS and styling changes</h3>
-    <time datetime="2023-12-09">December 9th, 2023</time>
-    <p>
-      Today I worked on some formatting using flexbox css to make the layout of my posts and headers look nicer. I wanted to have a layout that would scale depending on the size of the webpage and I roughly achieved that, but it isn't optimal on mobile still. I haven't added support for mobile screens fully, but that is something I can add in the future. I also tried a new dark color scheme that is easier on my eyes since I already have to stare at a screen for such a long time at work.
-    </p>
-  </article>
-
-  <!-- Second Blog Post with Image -->
-  <article class="article-card">
-    <h3>Updating to a Blog Layout</h3>
-    <time datetime="2023-12-03">December 3rd, 2023</time>
-    <div class="post-content">
-      <img src="computer-small.jpg" alt="computer screen" />
-      <p>
-        Today I switched over to a two-column simple blog layout instead of a grid layout. I decided to try two floating columns first while I learn more CSS formatting to make it easier. I also spent some time trying to reconfigure the links and turn them into buttons that look nicer. Next, I'd like to learn about flex and spend some time trying to utilize flex boxes to organize content.
+      <h1 class="hi-there-im-michael">
+        Hi There, I'm Michael!
+      </h1>
+      <p>I work in the healthcare field as a clinical transformation specialist in the Chicago suburbs.
+        I started this website as a way to document my journey learning to build a website from scratch with no prior web development knowledge.
       </p>
+      
+      <hr style="margin: 3em 0;">
+      <h2>Latest</h2>
+      <a style="font-weight: 500;" href="#">First Post - 2023</a>
     </div>
-  </article>  
-
-  <!-- Third Blog Post -->
-  <article class="article-card">
-    <h3>Easter Bunnies Don't Wear Shoes</h3>
-    <time datetime="2023-11-04">November 4th, 2023</time>
-    <p>If you know me at all, you might be wondering why am I even doing this? It's a fair question, and one I asked myself as well recently. Why am I doing this?.. Part of me has been wanting to have my own website for a long time now, but I think the reason is much deeper than that, one that really gets to the heart of who I am as a person. 
-    </p>
-    <p>
-      "Dad, why is the Easter Bunny wearing gym shoes?" I recall asking my dad this question at a young age when he took me to go see the Easter Bunny one year. Come to think of it, I don't recall ever going to see the Easter Bunny again after that memory, so I wonder if I spoiled it for the other children.. I often recall this memory because I believe it really captures a fundamental aspect of who I am. I have always been good at recognizing patterns, and consequently things that don't fit them. I've always been curious and loved to ponder the intricate workings of our universe, even the seemingly mundane things. I was that child who kept asking adults why until the gave up answering or maybe came to the realization that maybe they didn't actually know why themselves. Of course, some adults probably didn't want to admit to me that they didn't know, more  likely it was "because that's just the way it is" or "because I said so". But for me I I wasn't so interested in sticking it to them as I was fascinated that even someone 3 times my age couldn't tell me why the sky was blue. I mean, not knowing the "why" for something that we look at every single say must mean that there is a complicated reason that is difficult to explain to a child after all. And as it turns out, there is! As for Myself, I never *really* learned why the sky was blue until I learned about Rayleigh and Raman scattering in my college classes - the physics phenomena that describe the way light scatters and the tendency for light of smaller wavelengths such as blue to be scattered more. It was there, sitting in my college physical chemistry class that I realized it's no wonder so many adults would eventually get stumped of you keep asking why - the level of complexity of some of the most mundane things we often take for granted is astounding. And it is that same complexity and my desire to make sense of it that drives me to do so much of what I do.
-    </p>
-    <p> 
-      Do I want to be a web developer? No, not really. But do I have this insatiable desire to just try and see if I can figure out (knowing basically nothing about web development or design) how to build a website from absolute scratch? You bet! I can't even really explain it, maybe it's because in our increasingly complex world where the way things work seems to be getting more abstract every day (come on, how does a computer actually work, they are basically magic) or maybeit is just because I like to take on the challenge and see if I can learn something new. Theres something about building things from scratch is just immensely satisfying and rewarding to me. So here is my feeble attempt at building a website in 10x the time it would take for an actual web dev to do it and probably for something that looks 10x worse.. but I will be able to call it mine and hopefully learn a lot along the way!
-    </p>
-    </article>
-
-  <div class="sidebox"></div>
-
-</div>
-
-<!-- Footer Section -->
-<footer>
-  <h3>Michael Beusse</h3>
-  <p>mbeusse.com</p>
-</footer>
-
 </body>
 </html>
